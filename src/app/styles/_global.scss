@@ -1,0 +1,144 @@
+@use "./Variables" as *;
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 96px;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $background;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+img {
+  user-select: none;
+  //   font-size: $smallParagraph;
+}
+::selection {
+  //   background-color: $primaryColor;
+  // color: $secondaryColor;
+}
+.Toastify {
+  //   font-size: $largeParagraph;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #04273aea;
+}
+*::-moz-scrollbar-track {
+  background-color: #04273aea;
+}
+::-webkit-scrollbar-thumb {
+  //   background: $secondaryColor;
+}
+*::-moz-scrollbar-thumb {
+  //   background-color: $secondaryColor;
+}
+/* hero heading */
+
+// template classes
+.fs-2xl {
+  font-size: $fs-2xl;
+  font-weight: 700;
+}
+
+.fs-xl {
+  font-size: $fs-xl;
+  font-weight: 700;
+}
+
+.fs-lg {
+  font-size: $fs-lg;
+  font-weight: 600;
+}
+
+.fs-md {
+  font-size: $fs-md;
+  font-weight: 500;
+}
+
+.fs-sm {
+  font-size: $fs-sm;
+}
+
+.fs-xs {
+  font-size: $fs-xs;
+}
+// Text color classes
+.fc-primary {
+  color: $primary;
+}
+
+.fc-secondary {
+  color: $secondary;
+}
+
+.fc-secondary-light {
+  color: $secondaryLightShade;
+}
+
+.fc-accent {
+  color: $accent;
+}
+
+.fc-text {
+  color: $text;
+}
+
+.fc-text-muted {
+  color: $textMuted;
+}
+.fc-gradient {
+  background: $linearGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+// Background color classes
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-secondary {
+  background-color: $secondary;
+}
+
+.bg-secondary-light {
+  background-color: $secondaryLightShade;
+}
+
+.bg-accent {
+  background-color: $accent;
+}
+
+.bg-text {
+  background-color: $text;
+}
+
+.bg-text-muted {
+  background-color: $textMuted;
+}
+
+.bg-background {
+  background-color: $background;
+}
+
+.bg-gradient {
+  background: $linearGradient;
+}
