@@ -10,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: $background;
+  line-height: 1.5;
 }
 
 li {
@@ -23,33 +24,37 @@ button {
 }
 img {
   user-select: none;
-  //   font-size: $smallParagraph;
+  font-size: $fs-sm;
 }
 ::selection {
-  //   background-color: $primaryColor;
-  // color: $secondaryColor;
+  background-color: $secondary;
 }
 .Toastify {
-  //   font-size: $largeParagraph;
+  font-size: $fs-sm;
 }
-
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  color: white !important;
+  -webkit-text-fill-color: $textMuted;
+  -webkit-box-shadow: 0 0 0px 1000px #2d2a4000 inset !important;
+  transition: background-color 5000s ease-in-out 0s; /* Prevents quick override */
+}
 // Scrollbar
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #04273aea;
+  background: $accent;
 }
 *::-moz-scrollbar-track {
-  background-color: #04273aea;
+  background: $accent;
 }
 ::-webkit-scrollbar-thumb {
-  //   background: $secondaryColor;
+  background: $primary;
 }
 *::-moz-scrollbar-thumb {
-  //   background-color: $secondaryColor;
+  background: $primary;
 }
-/* hero heading */
 
 // template classes
 .fs-2xl {
@@ -103,8 +108,13 @@ img {
 .fc-text-muted {
   color: $textMuted;
 }
+
+.fc-danger {
+  color: $textDanger;
+}
+
 .fc-gradient {
-  background: $linearGradient;
+  background: $linearGradient-h;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -139,6 +149,9 @@ img {
   background-color: $background;
 }
 
-.bg-gradient {
-  background: $linearGradient;
+.bg-gradient-horizontal {
+  background: $linearGradient-h;
+}
+.bg-gradient-vertical {
+  background: $linearGradient-v;
 }
