@@ -26,3 +26,11 @@ export interface MainFieldProps {
     | "current-password"
     | "off";
 }
+
+export interface MainCardProps {
+  cardRatio: string;
+  cardCategories: { label: string; path: string }[];
+  cardPath: string;
+  cardImage: StaticImageData | string;
+  cardTitle: string;
+}

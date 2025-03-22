@@ -1,8 +1,19 @@
 @use "./variables" as *;
-fieldset:focus-within label {
-  top: -12px;
-  left: 10px;
-  color: $primary;
-  background: linear-gradient(to bottom, #140720, #11041b);
-  font-size: $fs-xs;
+fieldset:focus-within {
+  label {
+    top: -12px;
+    left: 10px;
+    color: $primary;
+    background: linear-gradient(to bottom, #140720, #11041b);
+    font-size: $fs-xs;
+  }
+}
+.field-busy {
+  label {
+    top: -12px;
+    left: 10px;
+    color: $primary;
+    background: linear-gradient(to bottom, #140720, #11041b);
+    font-size: $fs-xs;
+  }
 }

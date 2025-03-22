@@ -1,5 +1,5 @@
 import { MainFieldProps } from "@/lib/types/types";
-import { Field, ErrorMessage } from "formik";
+import { Field, ErrorMessage, useField } from "formik";
 import { FC } from "react";
 
 const MainField: FC<MainFieldProps> = ({
@@ -11,9 +11,12 @@ const MainField: FC<MainFieldProps> = ({
   isRequired = false,
   autocomplete,
 }) => {
+  const [_, meta] = useField(fieldName);
   return (
     <fieldset
-      className={`bg-background w-full px-1 py-0.5 relative flex border-1 border-transparent focus-within:border-[#4a4276] duration-300 rounded-[10px] ${fieldStyle}`}
+      className={`bg-background w-full px-1 py-0.5 relative flex border-1 border-transparent focus-within:border-[#4a4276] duration-300 rounded-[10px] ${fieldStyle} ${
+        meta.value ? "field-busy" : ""
+      }`}
     >
       {fieldLabel && (
         <label

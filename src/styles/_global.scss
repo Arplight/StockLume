@@ -148,6 +148,9 @@ textarea:-webkit-autofill {
 .bg-background {
   background-color: $background;
 }
+.bg-background-light {
+  background-color: $backgroundLightShade;
+}
 
 .bg-gradient-horizontal {
   background: $linearGradient-h;
